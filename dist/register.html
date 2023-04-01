@@ -21,9 +21,14 @@
     left: 50%;
     transform: translate(-50%, -50%);
     margin: 0 auto;
-    background-color: rgb(238, 241, 46);
+    background-color: rgb(233, 218, 150);
     width: 300px;
     padding: 20px;
+    box-shadow: 30px 30px 300px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
    }
 
    body  {
@@ -34,7 +39,7 @@
   	background-size: cover;
 	}
    </style>
-
+<link rel="shortcut icon" type="x-icon" href="fav.gif">
 </head>
 <body>
         
@@ -51,12 +56,12 @@
                   <div style="font-size: 20px;margin: 0px;color: black;"><b>(Input your Information)</b></div><br>
                     <div class="form-group">
                       <label for="email"><b>Email: </b></label>
-                      <input type="text" name="email" id="email" class="form-control" placeholder="Enter your desired email"><br>
+                      <input type="text" name="email" id="email" class="form-control" placeholder="Enter your email"><br>
                     </div>
                     
                     <div class="form-group">
                       <label for="password"><b>Password: </b></label>
-                      <input type="password" name="password" id="password" class="form-control"  placeholder="Enter your desired password"><br>
+                      <input type="password" name="password" id="password" class="form-control"  placeholder="Enter your password"><br>
                     </div>
                     <button type="button" id="register" name="register" class="btn btn-success">Register</button>
                     <br><br>
@@ -82,13 +87,13 @@ import { getAuth, createUserWithEmailAndPassword, signInWithEmailAndPassword, si
 // Your web app's Firebase configuration
 // For Firebase JS SDK v7.20.0 and later, measurementId is optional
 const firebaseConfig = {
-  apiKey: "AIzaSyAwFhY16WbjZ2kjnxk7U8gH6G3xEYEYwk8",
-  authDomain: "pbbapp-3cda1.firebaseapp.com",
-  projectId: "pbbapp-3cda1",
-  storageBucket: "pbbapp-3cda1.appspot.com",
-  messagingSenderId: "248758143610",
-  appId: "1:248758143610:web:37bd5b05082b7cac1e09c3",
-  measurementId: "G-NJEBDSWJYC"
+  apiKey: "AIzaSyB7F9NGjzeXqj9r_AlXhpmRoCHuMBYtaro",
+  authDomain: "testproject-8d491.firebaseapp.com",
+  projectId: "testproject-8d491",
+  storageBucket: "testproject-8d491.appspot.com",
+  messagingSenderId: "4599030488",
+  appId: "1:4599030488:web:4629f0bfb65ff30bd46dad",
+  measurementId: "G-FNCG2QQMGZ"
 };
 
 // Initialize Firebase
@@ -120,6 +125,4 @@ document.getElementById("register").addEventListener("click", function() {
   });		  		  
 });
 //----- End
-
-
 </script>

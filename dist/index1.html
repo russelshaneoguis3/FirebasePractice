@@ -15,7 +15,7 @@
   <script defer src="./bundle.js"></script>
 
 </head>
-
+<link rel="shortcut icon" type="x-icon" href="fav.gif">
 <style>
     body {
     background: #1FC05A;
@@ -72,6 +72,13 @@
 
 
 <script>
+    
+// Initialize Firebase
+const app = initializeApp(firebaseConfig);
+const analytics = getAnalytics(app);
+const auth = getAuth();
+console.log(app);
+
     //----- Logout code start	  
 document.getElementById("logout").addEventListener("click", function() {
   signOut(auth).then(() => {
